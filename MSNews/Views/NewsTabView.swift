@@ -12,6 +12,7 @@ struct NewsTabView: View {
     @StateObject var articleNewsVM = ArticleNewsViewModel()
     
     var body: some View {
+        
         NavigationView {
             ArticleListView(articles: articles)
                 .overlay(overlayView)

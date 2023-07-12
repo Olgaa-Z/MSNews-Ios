@@ -26,6 +26,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Saved", systemImage: "bookmark")
                 }
+            MoreeTabView()
+                .tabItem{
+                    Label("Other", systemImage: "ellipsis")
+                }
         }
     }
 

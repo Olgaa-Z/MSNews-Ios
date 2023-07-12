@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BA08F4A2A5E581700440E7C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA08F492A5E581700440E7C /* FirebaseAnalytics */; };
+		3BA08F4C2A5E581700440E7C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA08F4B2A5E581700440E7C /* FirebaseAuth */; };
+		3BA08F4E2A5E581700440E7C /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA08F4D2A5E581700440E7C /* FirebaseCrashlytics */; };
+		3BA08F502A5E5C6F00440E7C /* MoreeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA08F4F2A5E5C6F00440E7C /* MoreeTabView.swift */; };
+		3BA08F5C2A5E6DD500440E7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BA08F5B2A5E6DD500440E7C /* GoogleService-Info.plist */; };
 		3BD4FEFE2A5D53EA00DCD0C8 /* MSNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD4FEFD2A5D53EA00DCD0C8 /* MSNewsApp.swift */; };
 		3BD4FF002A5D53EA00DCD0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD4FEFF2A5D53EA00DCD0C8 /* ContentView.swift */; };
 		3BD4FF022A5D53EE00DCD0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD4FF012A5D53EE00DCD0C8 /* Assets.xcassets */; };
@@ -54,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BA08F4F2A5E5C6F00440E7C /* MoreeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreeTabView.swift; sourceTree = "<group>"; };
+		3BA08F5B2A5E6DD500440E7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3BD4FEFA2A5D53EA00DCD0C8 /* MSNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD4FEFD2A5D53EA00DCD0C8 /* MSNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSNewsApp.swift; sourceTree = "<group>"; };
 		3BD4FEFF2A5D53EA00DCD0C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +99,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA08F4E2A5E581700440E7C /* FirebaseCrashlytics in Frameworks */,
+				3BA08F4A2A5E581700440E7C /* FirebaseAnalytics in Frameworks */,
+				3BA08F4C2A5E581700440E7C /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +145,7 @@
 		3BD4FEFC2A5D53EA00DCD0C8 /* MSNews */ = {
 			isa = PBXGroup;
 			children = (
+				3BA08F5B2A5E6DD500440E7C /* GoogleService-Info.plist */,
 				3BD4FF3C2A5D5FE000DCD0C8 /* news.json */,
 				3BD4FF2F2A5D5BAB00DCD0C8 /* Models */,
 				3BD4FF2E2A5D5B9C00DCD0C8 /* Views */,
@@ -206,6 +217,7 @@
 				3BD4FF552A5D689200DCD0C8 /* EmptyPlaceholderView.swift */,
 				3BD4FF572A5D68B200DCD0C8 /* RetryView.swift */,
 				3BD4FF592A5D69CD00DCD0C8 /* SearchHistoryListView.swift */,
+				3BA08F4F2A5E5C6F00440E7C /* MoreeTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,12 +243,18 @@
 				3BD4FEF62A5D53EA00DCD0C8 /* Sources */,
 				3BD4FEF72A5D53EA00DCD0C8 /* Frameworks */,
 				3BD4FEF82A5D53EA00DCD0C8 /* Resources */,
+				3BA08F522A5E633100440E7C /* FirebaseCrashlytics Symbols uploader  */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MSNews;
+			packageProductDependencies = (
+				3BA08F492A5E581700440E7C /* FirebaseAnalytics */,
+				3BA08F4B2A5E581700440E7C /* FirebaseAuth */,
+				3BA08F4D2A5E581700440E7C /* FirebaseCrashlytics */,
+			);
 			productName = MSNews;
 			productReference = 3BD4FEFA2A5D53EA00DCD0C8 /* MSNews.app */;
 			productType = "com.apple.product-type.application";
@@ -309,6 +327,9 @@
 				Base,
 			);
 			mainGroup = 3BD4FEF12A5D53EA00DCD0C8;
+			packageReferences = (
+				3BA08F482A5E581700440E7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3BD4FEFB2A5D53EA00DCD0C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -327,6 +348,7 @@
 			files = (
 				3BD4FF052A5D53EE00DCD0C8 /* Preview Assets.xcassets in Resources */,
 				3BD4FF022A5D53EE00DCD0C8 /* Assets.xcassets in Resources */,
+				3BA08F5C2A5E6DD500440E7C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +368,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BA08F522A5E633100440E7C /* FirebaseCrashlytics Symbols uploader  */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/MSNews/GoogleService-Info.plist",
+			);
+			inputPaths = (
+				"\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "FirebaseCrashlytics Symbols uploader ";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BD4FEF62A5D53EA00DCD0C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -360,6 +406,7 @@
 				3BD4FF422A5D60DA00DCD0C8 /* DataStore.swift in Sources */,
 				3BD4FF312A5D5C6900DCD0C8 /* SplashScreen.swift in Sources */,
 				3BD4FF562A5D689200DCD0C8 /* EmptyPlaceholderView.swift in Sources */,
+				3BA08F502A5E5C6F00440E7C /* MoreeTabView.swift in Sources */,
 				3BD4FF502A5D682F00DCD0C8 /* ArticleRowView.swift in Sources */,
 				3BD4FF522A5D684C00DCD0C8 /* ArticleListView.swift in Sources */,
 				3BD4FF0A2A5D53EE00DCD0C8 /* MSNews.xcdatamodeld in Sources */,
@@ -530,6 +577,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"MSNews/Preview Content\"";
 				DEVELOPMENT_TEAM = L5732BW8N5;
 				ENABLE_PREVIEWS = YES;
@@ -539,12 +587,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rml.ixguard.test.MSNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rml.ixguard.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -568,12 +617,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rml.ixguard.test.MSNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rml.ixguard.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -697,6 +747,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3BA08F482A5E581700440E7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BA08F492A5E581700440E7C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BA08F482A5E581700440E7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		3BA08F4B2A5E581700440E7C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BA08F482A5E581700440E7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3BA08F4D2A5E581700440E7C /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BA08F482A5E581700440E7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3BD4FF082A5D53EE00DCD0C8 /* MSNews.xcdatamodeld */ = {
