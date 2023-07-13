@@ -18,8 +18,9 @@ struct SplashScreen: View {
                     .environmentObject(articleBookmarkVM)
             }else{
                 Rectangle().background(Color.white)
-                Image("itams-three")
+                Image("splash")
                     .resizable()
+                    .clipShape(Circle())
                     .scaledToFit()
                     .foregroundColor(Color.white)
                     .frame(width: 300, height: 300)

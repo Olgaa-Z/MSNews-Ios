@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1342612A5EBC2900EB23F1 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1342602A5EBC2900EB23F1 /* ScannerViewModel.swift */; };
+		3B1342632A5EBCC100EB23F1 /* QrCodeCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1342622A5EBCC100EB23F1 /* QrCodeCameraDelegate.swift */; };
+		3B1342652A5EBD1800EB23F1 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1342642A5EBD1800EB23F1 /* CameraPreview.swift */; };
+		3B1342672A5EBD6400EB23F1 /* QrCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1342662A5EBD6400EB23F1 /* QrCodeScannerView.swift */; };
 		3BA08F4A2A5E581700440E7C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA08F492A5E581700440E7C /* FirebaseAnalytics */; };
 		3BA08F4C2A5E581700440E7C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA08F4B2A5E581700440E7C /* FirebaseAuth */; };
 		3BA08F4E2A5E581700440E7C /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA08F4D2A5E581700440E7C /* FirebaseCrashlytics */; };
 		3BA08F502A5E5C6F00440E7C /* MoreeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA08F4F2A5E5C6F00440E7C /* MoreeTabView.swift */; };
 		3BA08F5C2A5E6DD500440E7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BA08F5B2A5E6DD500440E7C /* GoogleService-Info.plist */; };
+		3BA08F692A5E9AB900440E7C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA08F682A5E9AB900440E7C /* FirebaseFirestore */; };
+		3BA08F6C2A5EA94900440E7C /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 3BA08F6B2A5EA94900440E7C /* CodeScanner */; };
+		3BA08F712A5EB22300440E7C /* CodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA08F702A5EB22300440E7C /* CodeScannerView.swift */; };
 		3BD4FEFE2A5D53EA00DCD0C8 /* MSNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD4FEFD2A5D53EA00DCD0C8 /* MSNewsApp.swift */; };
 		3BD4FF002A5D53EA00DCD0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD4FEFF2A5D53EA00DCD0C8 /* ContentView.swift */; };
 		3BD4FF022A5D53EE00DCD0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD4FF012A5D53EE00DCD0C8 /* Assets.xcassets */; };
@@ -59,8 +66,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B1342602A5EBC2900EB23F1 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		3B1342622A5EBCC100EB23F1 /* QrCodeCameraDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeCameraDelegate.swift; sourceTree = "<group>"; };
+		3B1342642A5EBD1800EB23F1 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		3B1342662A5EBD6400EB23F1 /* QrCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScannerView.swift; sourceTree = "<group>"; };
 		3BA08F4F2A5E5C6F00440E7C /* MoreeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreeTabView.swift; sourceTree = "<group>"; };
 		3BA08F5B2A5E6DD500440E7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BA08F702A5EB22300440E7C /* CodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScannerView.swift; sourceTree = "<group>"; };
+		3BA08F722A5EB3E000440E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3BD4FEFA2A5D53EA00DCD0C8 /* MSNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD4FEFD2A5D53EA00DCD0C8 /* MSNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSNewsApp.swift; sourceTree = "<group>"; };
 		3BD4FEFF2A5D53EA00DCD0C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,8 +113,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BA08F4E2A5E581700440E7C /* FirebaseCrashlytics in Frameworks */,
+				3BA08F692A5E9AB900440E7C /* FirebaseFirestore in Frameworks */,
 				3BA08F4A2A5E581700440E7C /* FirebaseAnalytics in Frameworks */,
 				3BA08F4C2A5E581700440E7C /* FirebaseAuth in Frameworks */,
+				3BA08F6C2A5EA94900440E7C /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +137,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BA08F672A5E9AB900440E7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BA08F6D2A5EB17300440E7C /* scanner */ = {
+			isa = PBXGroup;
+			children = (
+				3BA08F702A5EB22300440E7C /* CodeScannerView.swift */,
+				3B1342662A5EBD6400EB23F1 /* QrCodeScannerView.swift */,
+			);
+			path = scanner;
+			sourceTree = "<group>";
+		};
 		3BD4FEF12A5D53EA00DCD0C8 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +160,7 @@
 				3BD4FF122A5D53EE00DCD0C8 /* MSNewsTests */,
 				3BD4FF1C2A5D53EE00DCD0C8 /* MSNewsUITests */,
 				3BD4FEFB2A5D53EA00DCD0C8 /* Products */,
+				3BA08F672A5E9AB900440E7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +177,7 @@
 		3BD4FEFC2A5D53EA00DCD0C8 /* MSNews */ = {
 			isa = PBXGroup;
 			children = (
+				3BA08F722A5EB3E000440E7C /* Info.plist */,
 				3BA08F5B2A5E6DD500440E7C /* GoogleService-Info.plist */,
 				3BD4FF3C2A5D5FE000DCD0C8 /* news.json */,
 				3BD4FF2F2A5D5BAB00DCD0C8 /* Models */,
@@ -157,6 +190,8 @@
 				3BD4FF062A5D53EE00DCD0C8 /* Persistence.swift */,
 				3BD4FF082A5D53EE00DCD0C8 /* MSNews.xcdatamodeld */,
 				3BD4FF032A5D53EE00DCD0C8 /* Preview Content */,
+				3B1342622A5EBCC100EB23F1 /* QrCodeCameraDelegate.swift */,
+				3B1342642A5EBD1800EB23F1 /* CameraPreview.swift */,
 			);
 			path = MSNews;
 			sourceTree = "<group>";
@@ -192,6 +227,7 @@
 				3BD4FF492A5D618000DCD0C8 /* ArticleNewsViewModel.swift */,
 				3BD4FF4B2A5D619600DCD0C8 /* ArticleBookmarkViewModel.swift */,
 				3BD4FF4D2A5D61A800DCD0C8 /* ArticleSearchViewModel.swift */,
+				3B1342602A5EBC2900EB23F1 /* ScannerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -207,6 +243,7 @@
 		3BD4FF2E2A5D5B9C00DCD0C8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3BA08F6D2A5EB17300440E7C /* scanner */,
 				3BD4FF302A5D5C6900DCD0C8 /* SplashScreen.swift */,
 				3BD4FF342A5D5F5100DCD0C8 /* SearchTabView.swift */,
 				3BD4FF362A5D5F5F00DCD0C8 /* NewsTabView.swift */,
@@ -254,6 +291,8 @@
 				3BA08F492A5E581700440E7C /* FirebaseAnalytics */,
 				3BA08F4B2A5E581700440E7C /* FirebaseAuth */,
 				3BA08F4D2A5E581700440E7C /* FirebaseCrashlytics */,
+				3BA08F682A5E9AB900440E7C /* FirebaseFirestore */,
+				3BA08F6B2A5EA94900440E7C /* CodeScanner */,
 			);
 			productName = MSNews;
 			productReference = 3BD4FEFA2A5D53EA00DCD0C8 /* MSNews.app */;
@@ -329,6 +368,7 @@
 			mainGroup = 3BD4FEF12A5D53EA00DCD0C8;
 			packageReferences = (
 				3BA08F482A5E581700440E7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3BA08F6A2A5EA94900440E7C /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = 3BD4FEFB2A5D53EA00DCD0C8 /* Products */;
 			projectDirPath = "";
@@ -400,8 +440,11 @@
 				3BD4FF4A2A5D618000DCD0C8 /* ArticleNewsViewModel.swift in Sources */,
 				3BD4FF392A5D5F6C00DCD0C8 /* BookmarkTabView.swift in Sources */,
 				3BD4FF372A5D5F5F00DCD0C8 /* NewsTabView.swift in Sources */,
+				3B1342652A5EBD1800EB23F1 /* CameraPreview.swift in Sources */,
 				3BD4FF5A2A5D69CD00DCD0C8 /* SearchHistoryListView.swift in Sources */,
 				3BD4FF582A5D68B200DCD0C8 /* RetryView.swift in Sources */,
+				3B1342632A5EBCC100EB23F1 /* QrCodeCameraDelegate.swift in Sources */,
+				3B1342612A5EBC2900EB23F1 /* ScannerViewModel.swift in Sources */,
 				3BD4FF402A5D608900DCD0C8 /* NewsAPI.swift in Sources */,
 				3BD4FF422A5D60DA00DCD0C8 /* DataStore.swift in Sources */,
 				3BD4FF312A5D5C6900DCD0C8 /* SplashScreen.swift in Sources */,
@@ -413,7 +456,9 @@
 				3BD4FF352A5D5F5100DCD0C8 /* SearchTabView.swift in Sources */,
 				3BD4FF4C2A5D619600DCD0C8 /* ArticleBookmarkViewModel.swift in Sources */,
 				3BD4FF072A5D53EE00DCD0C8 /* Persistence.swift in Sources */,
+				3BA08F712A5EB22300440E7C /* CodeScannerView.swift in Sources */,
 				3BD4FF542A5D687700DCD0C8 /* SafariView.swift in Sources */,
+				3B1342672A5EBD6400EB23F1 /* QrCodeScannerView.swift in Sources */,
 				3BD4FF462A5D60FF00DCD0C8 /* Article.swift in Sources */,
 				3BD4FF002A5D53EA00DCD0C8 /* ContentView.swift in Sources */,
 				3BD4FF482A5D612300DCD0C8 /* NewsAPIResponse.swift in Sources */,
@@ -582,11 +627,12 @@
 				DEVELOPMENT_TEAM = L5732BW8N5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MSNews/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "\"\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -612,11 +658,12 @@
 				DEVELOPMENT_TEAM = L5732BW8N5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = MSNews/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "\"\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -757,6 +804,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		3BA08F6A2A5EA94900440E7C /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -774,6 +829,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3BA08F482A5E581700440E7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
+		};
+		3BA08F682A5E9AB900440E7C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BA08F482A5E581700440E7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3BA08F6B2A5EA94900440E7C /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BA08F6A2A5EA94900440E7C /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 

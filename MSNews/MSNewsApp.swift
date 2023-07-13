@@ -8,6 +8,8 @@
 import SwiftUI
 import FirebaseCore
 import Firebase
+import FirebaseFirestore
+import FirebaseAuth
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -26,7 +28,7 @@ struct MSNewsApp: App {
     var body: some Scene {
         WindowGroup {
             SplashScreen()
-                
+//              CodeScannerView()
         }
     }
 }
